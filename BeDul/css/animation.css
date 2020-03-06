@@ -1,0 +1,51 @@
+@keyframes phone {
+    0% {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .4;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes navigate {
+    from {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+svg #phone {
+    animation: .5s phone ease-in;
+}
+
+svg #navigate {
+    animation: .5s navigate ease-in;
+}
+
+svg #square {
+    transform: translateX(300px);
+    animation: .5s phone ease-in;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-delay: .3s;
+}
+
+svg #man {
+    transform: translateX(300px);
+    animation: .5s phone ease-in;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-delay: .6s;
+}
